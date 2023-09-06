@@ -16,10 +16,17 @@ public class StringJava8 {
         String s2 ="World";
         String s3 =s1+" "+s2;
         System.out.println(s3);
-        System.out.println("==============");
-        StringBuffer sb1 = new StringBuffer();
+//        System.out.println("==============");
+//        StringBuffer sb1 = new StringBuffer();
+//        sb1.append("Hello");
+//        sb1.append(" ").append("World");
+//        System.out.println(sb1);
+
+        System.out.println("===============");
+        StringBuilder sb1 = new StringBuilder();
         sb1.append("Hello");
         sb1.append(" ").append("World");
-        System.out.println(sb1);
+        String str = sb1.toString();;
+        System.out.println(str);
     }
 }
