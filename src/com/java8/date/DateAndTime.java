@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.time.Month;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
@@ -40,6 +42,17 @@ public class DateAndTime {
         }catch(Exception ex){
             ex.printStackTrace();
         }
+        LocalDate now = LocalDate.of(2023,Month.SEPTEMBER,6);
+        listOfPerson.stream()
+                .forEach(
+                        p ->{
+                            Period period = Period.between(p.getDateOfBirth(),now);
+                            System.out.println(p.getName()+" was born "
+                                    +period.get(ChronoUnit.YEARS)+ " years and " +
+                                    period.get(ChronoUnit.MONTHS)+" months "
+                            +" ["+p.getDateOfBirth().until(now,ChronoUnit.YEARS)+" Years ]");
+                        }
+                );
     }
 
 }
