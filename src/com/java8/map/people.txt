@@ -1,0 +1,13 @@
+ram 33 M
+shyam 45 M
+rekha 34 F
+son 33 F
+mahesh 38 M
+jai 29 M
+amar 29 M
+subelal 33 M
+Anchal 33 F
+dablu 34 M
+hari 45 M
+jay  66 F
+kya 45 F
